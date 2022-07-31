@@ -5,6 +5,7 @@ let output = document.querySelector('.output');
 btn.addEventListener('click', (e) => {
     e.preventDefault();
     let inpValue = input.value;
+    inpValue = inpValue.substring(0,17);
 
     // Find the first 4 character
     let character = inpValue.toString();
